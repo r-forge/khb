@@ -73,7 +73,7 @@ khb <- function(reduced, full, corrected.se=FALSE, med.sandwich=NULL, glm.sandwi
 	mediators <- vf[!(vf %in% keyvar)]
 	message(" [>] Mediators: ", paste(mediators, collapse=", "))
 	datamm <- model.matrix(full)
-	if(inherits(fm1, "clm")){
+	if(inherits(full, "clm")){
 		datamm <- datamm$X
 	}
 	datammdf <- as.data.frame(datamm)

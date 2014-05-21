@@ -80,7 +80,6 @@ regTable <- function(..., digits=max(3L, getOption("digits") - 2L), signif.stars
 	if(!khb.resid){
 		regmat <- regmat[!rowcond, ]
 	}
-	library(fmsb)
 	qualmat <- matrix("", ncol=length(allreg), nrow=7)
 	rownames(qualmat) <- c("Pseudo R2", "Dev.", "Null", "Chisq", "Sig", "Dl", "BIC")
 	qualmat["Pseudo R2", ] <- sapply(allreg, function(x) roundedDigit(NagelkerkeR2(x)$R2))

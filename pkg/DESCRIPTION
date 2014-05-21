@@ -3,8 +3,8 @@ Version: 0.1
 Date: 2014-04-05
 Title: KHB: Comparing nonlinear regression models
 Authors@R:c(person("Matthias", "Studer", email = "matthias.studer@unige.ch", role = c("aut", "cre")), person("Kristian", "Karlson", email = "kbk@soc.ku.dk", role = c("aut")))
-Depends: R (>= 3.0.0), TraMineR(>= 1.8-8)
-Imports: systemfit, sandwich, boot, lmtest, compiler
+Depends: R (>= 3.0.0)
+Imports: systemfit, sandwich, boot, lmtest, compiler, fmsb
 Suggests: RUnit, knitr, TraMineR
 VignetteBuilder: knitr
 Description: The khb library provides functions to compare logistic regressions using APE (average partial effect), y*-standardization and KHB method. 
