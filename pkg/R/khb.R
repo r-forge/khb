@@ -203,7 +203,6 @@ khb <- function(reduced, full, corrected.se=FALSE, med.sandwich=NULL, glm.sandwi
 }
 
 #' @rdname khb
-#' @export print khb
 #' @param x A khb object
 #' @param type Character. The type of information printed (see details).
 #' @param keyvar A character vector or \code{NULL} (default). The list of 
@@ -212,7 +211,7 @@ khb <- function(reduced, full, corrected.se=FALSE, med.sandwich=NULL, glm.sandwi
 #'   variables.
 #' @param disentangle Logical. If \code{FALSE} (default), the contribution of each mediator is not printed.
 #' @param ... Arguments passed to other methods.
-
+#' @method print khb
 print.khb <- function(x, type="summary", keyvar=NULL, disentangle=FALSE, ...){
 	if(type=="models"){
 		args <- c(list(Reduced=x$reduced, Adjusted=x$adjusted, Full=x$full), list(...))

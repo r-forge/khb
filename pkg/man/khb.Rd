@@ -7,7 +7,8 @@
 khb(reduced, full, corrected.se = FALSE, med.sandwich = NULL,
   glm.sandwich = FALSE, savefs = FALSE)
 
-print.khb(x, type = "summary", keyvar = NULL, disentangle = FALSE, ...)
+\method{print}{khb}(x, type = "summary", keyvar = NULL,
+  disentangle = FALSE, ...)
 }
 \arguments{
 \item{reduced}{The reduced model to compare (withought mediators variables). This
