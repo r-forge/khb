@@ -1,6 +1,6 @@
 Package: khb
 Version: 0.11
-Date: 2022-05-25
+Date: 2024-10-10
 Title: KHB: Comparing nonlinear regression models
 Authors@R:c(person("Matthias", "Studer", email = "matthias.studer@unige.ch", role = c("aut", "cre")), person("Kristian", "Karlson", email = "kbk@soc.ku.dk", role = c("aut")))
 Depends: R (>= 3.0.0)
